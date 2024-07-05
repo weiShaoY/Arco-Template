@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>一键抚平天下不平事</title>
+    <meta name="description" content="Opinionated Vite Starter Template" />
+  </head>
+  <body class="font-sans">
+    <!-- 应用程序的主容器 -->
+    <div id="app"></div>
+
+    <!-- 如果JavaScript被禁用，显示此消息 -->
+    <noscript>
+      <div>Please enable JavaScript to use this application.</div>
+    </noscript>
+
+    <script>
+      /**
+       * 立即执行的函数表达式（IIFE），用于根据用户的系统主题偏好或本地存储的设置来应用深色或浅色主题。
+       */
+      // ;(function () {
+      //   // 检查用户是否偏好深色模式 (从本地存储中获取设置，如果没有则使用系统设置)
+      //   const prefersDark =
+      //     window.matchMedia &&
+      //     window.matchMedia('(prefers-color-scheme: dark)').matches
+      //   const setting = localStorage.getItem('color-schema') || 'auto'
+
+      //   // 如果设置为深色模式或（用户偏好深色且未设置为浅色）
+      //   if (setting === 'dark' || (prefersDark && setting !== 'light'))
+      //     // 则在文档根元素上添加'dark'类，启用深色模式
+      //     document.documentElement.classList.toggle('dark', true)
+      // })()
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

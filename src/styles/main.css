@@ -1,0 +1,15 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+//  nprogress  顶部进度条颜色
+#nprogress .bar {
+  background: #fec451 !important; //自定义颜色
+  height: 3px !important;
+}
