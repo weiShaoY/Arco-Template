@@ -4,13 +4,13 @@ import type { AppRouteRecordRaw } from '../types'
 
 const EXCEPTION: AppRouteRecordRaw = {
   path: '/exception',
-  name: 'exception',
+  name: 'Exception',
   component: DEFAULT_LAYOUT,
   meta: {
-    locale: 'menu.exception',
+    locale: '异常页',
     requiresAuth: true,
     icon: 'icon-exclamation-circle',
-    order: 6,
+    order: 2,
   },
   children: [
     {

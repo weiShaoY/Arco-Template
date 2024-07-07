@@ -53,11 +53,13 @@
     "bazhi",
     "composables",
     "echarts",
+    "moduler",
     "nporgress",
     "nprogress",
     "pinia",
     "popconfirm",
     "sider",
+    "unocss",
     "unplugin",
     "vueuse"
   ]

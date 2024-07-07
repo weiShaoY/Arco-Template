@@ -2,6 +2,8 @@ import type { RouteRecordNormalized } from 'vue-router'
 
 const modules = import.meta.glob('./modules/*.ts', { eager: true })
 
+console.log('%c Line:4 🍖 modules', 'color:#42b983', modules)
+
 /**
  *  格式化modules模块(将modules模块转化为数组)
  */

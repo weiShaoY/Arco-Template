@@ -49,9 +49,10 @@ nextTick(() => {
 
 <template>
   <VCharts
-    class="chart_box"
+    v-if="renderChart"
     :option="options"
-    autoresize
+    :autoresize="autoResize"
+    :style="{ width, height }"
   />
 </template>
 

@@ -8,7 +8,7 @@ export default {
 
 <template>
   <div
-    class="container"
+    class="wrap"
   >
     <Breadcrumb
       :items="['异常页', '404']"
@@ -36,6 +36,7 @@ export default {
         <a-button
           key="back"
           type="primary"
+          @click="$router.back()"
         >
           返回
         </a-button>
@@ -45,7 +46,7 @@ export default {
 </template>
 
 <style scoped lang="less">
-  .container {
+  .wrap {
   padding: 0 20px 20px 20px;
   height: calc(100% - 40px);
   :deep(.content) {

@@ -22,7 +22,18 @@ export type AppRouteRecordRaw = {
   /**
    *   路由元信息
    */
-  meta?: RouteMeta
+  meta?: RouteMeta & {
+
+    /**
+     *   不显示面包屑
+     */
+    noShowBreadcrumb?: boolean
+
+    /**
+     *   不显示Footer
+     */
+    noShowFooter?: boolean
+  }
 
   /**
    *   路由重定向

@@ -1,3 +1,5 @@
+import type { App } from 'vue'
+
 import { use } from 'echarts/core'
 
 import { CanvasRenderer } from 'echarts/renderers'
@@ -21,6 +23,8 @@ import {
   VisualMapComponent, //  视觉映射组件
 } from 'echarts/components'
 
+import Chart from './chart/index.vue'
+
 use([
   VisualMapComponent,
   TitleComponent, //  标题组件
@@ -37,3 +41,9 @@ use([
   GeoComponent, //  地理坐标系组件,
   MapChart, //  地图组件
 ])
+
+export default {
+  install(Vue: App) {
+    Vue.component('Chart', Chart)
+  },
+}

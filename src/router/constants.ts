@@ -27,7 +27,7 @@ export const DEFAULT_ROUTE_NAME = 'Category'
  *  默认路由配置
  */
 export const DEFAULT_ROUTE = {
-  title: '分类管理',
+  title: '工作台',
   name: DEFAULT_ROUTE_NAME,
-  fullPath: '/blog/category',
+  fullPath: '/dashboard/workplace',
 }

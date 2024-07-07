@@ -229,12 +229,12 @@ onMounted(() => {
 
           <!-- 面包屑 -->
           <Breadcrumb
-            v-if="appStore.state.breadcrumb"
+            v-if="appStore.state.breadcrumb && !router.currentRoute.value.meta.noShowBreadcrumb"
           />
 
           <!-- 内容区域 -->
           <a-layout-content
-            class="m-x-5 m-b-5 bg-white p-t-0"
+            class="m-x-5 m-b-5 flex bg-white p-t-0"
           >
 
             <PageLayout />
@@ -242,7 +242,7 @@ onMounted(() => {
           </a-layout-content>
 
           <Footer
-            v-if="appStore.state.footer"
+            v-if="appStore.state.footer && !router.currentRoute.value.meta.noShowFooter "
           />
         </a-layout>
       </a-layout>
